@@ -1,0 +1,15 @@
+version '1.0'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven { url "https://raw.githubusercontent.com/ac-micro-transfer/maven/master/repository" }
+}
+
+dependencies {
+    implementation "com.acbooking:gitium-java-api:1.0.6"
+    testImplementation "junit:junit:4.12"
+}
